@@ -3,7 +3,7 @@ import { library } from '@fortawesome/fontawesome-svg-core';
 import { faUser, faLock } from '@fortawesome/free-solid-svg-icons';
 import {Route} from "react-router-dom";
 
-import HomePage from './HomePage';
+import HomePage from './pages/HomePage';
 
 library.add(faUser, faLock);
 

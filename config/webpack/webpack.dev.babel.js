@@ -8,12 +8,13 @@ module.exports = {
     output: {
         filename: '[name].js',
         path: paths.outputPath,
-        chunkFilename: '[name].js'
+        chunkFilename: '[name].js',
+        publicPath:'/'
     },
     performance: {
         hints: 'warning',
-        maxAssetSize: 20000000,
-        maxEntrypointSize: 8500000,
+        maxAssetSize: 20000000000,
+        maxEntrypointSize: 8500000000,
         assetFilter: assetFilename => {
             return (
                 assetFilename.endsWith('.css') || assetFilename.endsWith('.js')
